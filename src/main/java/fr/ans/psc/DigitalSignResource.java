@@ -8,5 +8,5 @@ import java.util.List;
 
 public abstract class DigitalSignResource<C extends ResourceConfiguration> extends AbstractConfigurableResource<C> {
 
-    public abstract void sign(byte[] docToSign, List<AdditionalParameter> additionalParameters, Handler<DigitalSignResponse> responseHandler);
+    public abstract DigitalSignResponse sign(byte[] docToSign, List<AdditionalParameter> additionalParameters);
 }
