@@ -9,5 +9,4 @@ public abstract class DigitalSignResource<C extends ResourceConfiguration> exten
     public abstract void sign(byte[] docToSign, Handler<DigitalSignResponse> responseHandler);
     
     public abstract DigitalSignResponse sign(byte[] docToSign);
-
 }
