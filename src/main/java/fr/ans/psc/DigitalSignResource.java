@@ -4,9 +4,9 @@ import io.gravitee.gateway.api.handler.Handler;
 import io.gravitee.resource.api.AbstractConfigurableResource;
 import io.gravitee.resource.api.ResourceConfiguration;
 
-import java.util.List;
-
 public abstract class DigitalSignResource<C extends ResourceConfiguration> extends AbstractConfigurableResource<C> {
 
-    public abstract DigitalSignResponse sign(byte[] docToSign, List<AdditionalParameter> additionalParameters);
+    public abstract void sign(byte[] docToSign, Handler<DigitalSignResponse> responseHandler);
+    
+    public abstract DigitalSignResponse sign(byte[] docToSign);
 }

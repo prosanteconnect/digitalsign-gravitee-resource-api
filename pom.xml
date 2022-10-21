@@ -6,8 +6,7 @@
 
     <groupId>fr.ans.psc</groupId>
     <artifactId>digital-sign-resource-api</artifactId>
-    <version>1.2-SNAPSHOT</version>
-
+    <version>1.4.0-SNAPSHOT</version>
     <name>API for Digital sign resource Esignsante</name>
 
     <properties>
@@ -34,5 +33,16 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<name>GitHub digitalsign-gravitee-policy Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/prosanteconnect/digitalsign-gravitee-resource-api</url>
+		</snapshotRepository>
+		<repository>
+			<id>github</id>
+			<name>GitHub digitalsign-gravitee-policy Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/prosanteconnect/digitalsign-gravitee-resource-api</url>
+		</repository>
+	</distributionManagement>
 </project>
